@@ -7,7 +7,7 @@ const initialProduct = {
 }
 
 const productSlice = createSlice( {
-    name: "products",
+    name: "product",
     initialState:initialProduct,
     reducers: {
         fetchProductSuccess: (state, action)=> {
