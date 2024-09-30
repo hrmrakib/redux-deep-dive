@@ -1,0 +1,4 @@
+1. Store
+2. reducers
+3. useSelector
+4. useDispatch
