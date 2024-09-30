@@ -4,6 +4,7 @@ import Root from "../layouts/Root";
 import About from "../pages/About";
 import Service from "../pages/Service";
 import Assessment from "../pages/Assessment";
+import Product from "../pages/Product";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
             {
                 path: "/service",
                 element: <Service />
+            },
+            {
+                path: "/product",
+                element: <Product />
             },
             {
                 path: "/assessment",
