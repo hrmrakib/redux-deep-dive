@@ -3,8 +3,8 @@ import TodoInput from "./components/todo/TodoInput";
 
 const App = () => {
   return (
-    <div className='flex items-center'>
-      {/* <Counter /> */}
+    <div className='flex justify-evenly'>
+      <Counter />
       <TodoInput />
     </div>
   );

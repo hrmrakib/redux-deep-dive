@@ -11,10 +11,10 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className='border-2'>
-      <h2 className='text-black'>value: {counterValue}</h2>
+    <div>
+      <h2 className='text-black text-lg'>Count: {counterValue}</h2>
 
-      <div className='flex items-center'>
+      <div className='flex items-center gap-5 mt-4'>
         <button onClick={() => dispatch(increment())}>++</button>
         <button onClick={() => dispatch(decrement())}>--</button>
         <button onClick={() => dispatch(reset())}>00</button>

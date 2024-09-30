@@ -8,6 +8,12 @@ const Service = () => {
 
     const categoriesMap = products.map((product)=> product.category)
     const categories = [...new Set(categoriesMap)]
+    
+    const brandMap = products.map((product)=> product.brand)
+    const brand = [...new Set(brandMap)]
+
+    const x = brand.map((b)=> b)
+    console.log(x)
 
   return (
     <div className='flex gap-10'>
@@ -23,6 +29,18 @@ const Service = () => {
               </option>
             ))}
           </select>
+
+
+          <div>
+            <h2>Brand</h2>
+            {brand.map((b)=> {
+                <span>{b}</span>
+            // <label htmlFor=""> 
+            // <span>{b}</span>
+            //     <input type="checkbox" name="" id="" />
+            // </label>
+            })}
+          </div>
          </div>
 
         <div className='w-full grid grid-cols-3 gap-5'>
